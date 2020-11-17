@@ -1,0 +1,37 @@
+<html>
+<head>
+<titile> My first javascript program</titile>
+</head>
+<body>
+<input type = "text" id = "1"/>
+<button onclick = "display()"> Click me
+</button>
+<p id = "result"/>
+</body>
+</html>
+<script>
+function display(){
+    console.log("inside function");
+    var inputNumber = document.getElementById("1").value;
+    console.log(inputNumber);
+    var factorial = 1;
+    for(var i =1 ;i <= inputNumber ; i++){
+        factorial = factorial * i;
+    }
+
+    let a = [0,1,2,3,4,5 ];
+    a.forEach(element => {
+        console.log(element);
+    })
+
+// statement one
+for(var i=0 , j= 5 ; i<4 , j< 10 ; i++ , j++){
+console.log("i value "+ i);
+console.log("j value " + j);
+}
+
+    document.getElementById("result").innerHTML = factorial;
+}
+
+</script>
+
